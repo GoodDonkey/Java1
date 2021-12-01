@@ -9,11 +9,11 @@ import javax.swing.*;
 
 public class OkJavaGoInHomeInput {
     public static void main(String[] args) {
-        JFrame jf=new JFrame();
+        JFrame jf = new JFrame();
         jf.setAlwaysOnTop(true);
 
-        String id = JOptionPane.showInputDialog(jf, "Enter a ID");
-        String brightness = JOptionPane.showInputDialog(jf, "Enter a Brightness");
+        String id = args[0];
+        String brightness = args[1];
 
         // Elevator call
         Elevator myElevator = new Elevator(id);
@@ -31,7 +31,7 @@ public class OkJavaGoInHomeInput {
         floorLamp.on();
 
         // Dimming lamp
-        DimmingLights moodLamp = new DimmingLights(id + "moodLamp");
+        DimmingLights moodLamp = new DimmingLights(id + " moodLamp");
         moodLamp.setBright(Double.parseDouble(brightness));
         moodLamp.on();
     }

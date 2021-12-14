@@ -1,23 +1,25 @@
 public class MyOOP {
     public static void main(String[] args) {
-        delimiter = "----";
-        printA();
-        printA();
+        Print.delimiter = "----";
+        Print.printA();
+        Print.printA();
 
-        delimiter = "****";
-        printB();
-        printB();
+        Print.delimiter = "****";
+        Print.printB();
+        Print.printB();
     }
+}
 
+class Print {
     public static String delimiter = "";
 
-    private static void printB() {
+    public static void printB() {
         System.out.println(delimiter);
         System.out.println("B");
         System.out.println("B");
     }
 
-    private static void printA() {
+    public static void printA() {
         System.out.println(delimiter);
         System.out.println("A");
         System.out.println("A");

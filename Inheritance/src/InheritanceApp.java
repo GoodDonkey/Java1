@@ -16,6 +16,10 @@ class Cal {
     public int sum(int v1, int v2){
         return v1+v2;
     }
+
+    public int sum(int v1, int v2, int v3){
+        return v1+v2;
+    }
 }
 
 class Cal3 extends Cal{
@@ -27,5 +31,4 @@ class Cal3 extends Cal{
         System.out.println("this is Cal3 sum");
         return v1+v2;
     }
-
 }
